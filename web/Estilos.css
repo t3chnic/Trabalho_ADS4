@@ -1,0 +1,596 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(Img/images.png);
+    font-family: "cambria";
+
+}
+
+
+
+.conteudo {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    height: auto;
+    position: relative;
+
+}
+
+nav {
+    position: relative;
+    width: 100%;
+}
+
+
+
+img.logotipo{
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#imgLogin{
+    padding: auto;
+    margin: auto;
+    float: right;
+    width:130px;
+    height: 90px;
+
+}
+
+.login {
+    font-size: 14px; 
+    position: relative;
+    float: right;
+    color: black;
+
+}
+
+//a:link, a:visited{text-decoration: none; color: black;}
+//a:hover{text-decoration: underline; color: #49111e;}
+//a:active{text-decoration: none; }
+
+#menuWrapper {
+    margin-bottom: 25px;
+    margin-top: 50px;
+    width:100%; 
+    height:40px;
+    padding-left:14px;
+    background:#49111e; 
+    border-radius:5px; 
+}
+.menuPrincipal {
+    width: 100%;
+    float: left;
+    font-size:14px;
+    font-weight:bold;
+}
+.menuPrincipal ul {
+    float:left;
+    height:0px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    border-radius: 0px 0px 5px 5px; /* Bordas aredondadas do sub-menu */
+}
+.menuPrincipal li{
+    float:left;
+    padding:0px;
+}
+.menuPrincipal li a{
+    border-right: 1px solid #666;
+    color:#b89052; 
+    display:block;text-transform:uppercase;
+    font-weight:normal;
+    line-height:40px;
+    margin:0px;
+    padding:0px 25px; 
+    text-align:center;
+    text-decoration:none;
+    
+}
+.menuPrincipal li a:hover, .menuPrincipal ul li:hover a {
+    background: #b98052; /* Cor das casas ao passar o cursor */
+    color:#620d24; /* Cor do texto ao passar o cursor */
+    text-decoration:none;
+}
+.menuPrincipal li ul {
+    background:#b98052; /* Cor de fundo do sub-menu */
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    width:200px; /* Tamanho do sub-menu */
+    z-index:100;
+    border-top:1px solid #fff; /* Borda superior do sub-menu */
+
+
+}
+.menuPrincipal li:hover ul{
+    display:block;
+}
+.menuPrincipal li li {
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+}
+.menuPrincipal li:hover li a {
+    background:none;
+    border-radius: 0px 0px 5px 5px; /* Borda das sub-casas */
+}
+.menuPrincipal li ul a {
+    display:block;
+    height:35px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+.menuPrincipal li ul a:hover, .menu li ul li:hover a{
+    background: #620d24; /* Cor das sub-casas ao passar o cursor */
+    color:#ffffff;
+    text-decoration:none;
+}
+
+
+
+.cabecalho {
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+
+#search {
+    /*width: 228px;*/ /* Tamanho da caixa de busca */
+    height: 24px;
+    float: right;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 6px;
+    /*background: #fff;*//* Cor de fundo da caixa de busca */
+}
+#search-box {
+    margin-top: 3px;
+    margin-right: 5px;
+    border:0px;
+    background: #fff;
+    text-align:center;
+    float: left;
+
+    #filtroDescricao{
+        margin-top: 3px;
+        margin-right: 5px;
+        border:0px;
+        background: #fff;
+        text-align:center;
+        float: left;
+        display:inline;
+    }
+    
+    #filtoBuscar{
+        float: right;
+    }
+
+
+}
+#search-btn {
+    float: right;
+    background: #D27379;
+    background-image: url(Img/icon_pesq.png);
+    width: 25px;
+    height: 25px;
+    border: 0;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    margin: 0;
+}
+img.imgLink{
+    height: 17px;
+    width: 17px;
+    margin:0;
+    float: left;
+
+}
+
+
+/*------------------------- formul�rios --------------------------------*/
+
+.form{
+    margin-left: 250px;
+    width: 100%;
+
+}
+
+#formLogin{
+    width: 1024px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.formCliente{
+    margin-left: 400px;
+}
+
+.legenda{
+
+    color: #b89052;
+    background-color: #49111e;  
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: "cambria";
+
+
+
+
+}
+
+.field{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+
+    /*opacity: 0.65;*/
+}
+
+.fieldProduto{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.fieldImagem{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-left: 250px;
+}
+
+fieldset ul{
+
+    border: 1px;
+    margin: 5px;
+    padding: 12px;      
+    border-radius:  10px;
+}
+
+fieldset ul li{
+    margin: 0.5em 0;  
+    list-style: none;
+}
+
+fieldset label{
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 70px;
+    vertical-align: top; 
+
+
+}
+
+fieldset input[type="button"], input[type="submit"]
+{
+    border-radius:10px;
+    padding:5px;
+    margin: 10px;
+
+}
+
+fieldset input[type="text"], input[type="password"], input[type="email"], textarea.area
+{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    /*border: 1px solid #aaa;*/
+}         
+
+.textbox-sem-edicao{
+    background-color: #ccc;    
+}
+
+.erro{    
+    margin-left: 10px;
+    color:red;    
+}
+
+/*---------------------- Listagem ----------------------------------*/
+
+#consultaCli{
+    background-color: white;
+    border: 5px solid #49111e;
+    border-radius: 25px;
+}
+
+
+
+h1{
+    text-align: center;
+
+}
+
+
+.tabelaCliente
+{
+    border: 1px solid black;
+    margin-left: 3px;
+}
+
+.tabelaCliente th
+{
+    border: 1px solid black;                
+    background-color: #620d24;
+    color:#b89052;  
+    width: 100px;
+}
+
+.tabelaCliente td
+{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+
+}           
+
+.tabelaProds
+{
+    border: 1px solid black;
+    margin-left: 190px;
+}
+
+.tabelaProds th
+{
+    border: 1px solid black;                
+    background-color: #620d24;
+    color:#b89052;  
+    width: 100px;
+}
+
+.tabelaProds td
+{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+
+}           
+
+
+
+
+img.imgListProd{
+    width: 25px;
+    height: 25px;
+
+}
+
+#listProd{
+    background-color: white;
+    border: 5px solid #49111e;
+    border-radius: 25px;
+    width: 900px;
+    margin-left: 70px;
+    
+}
+
+
+
+
+
+/*------------------------- vitrine ------------------------------------*/
+
+
+.figura-vitrine{    
+    width: 190px;    
+    height: 190px;;
+    margin: 0;
+    padding: 0;
+    box-shadow: 3px 3px 3px black;  
+}
+
+.figura-vitrine:hover{    
+    
+    box-shadow: 7px 7px 7px black;  
+}
+
+.imagem-vitrine{
+    height: inherit;
+    width: inherit;
+}
+
+.figura-vitrine figcaption
+{
+    margin-top: 5px;    
+}
+
+
+.ul-vitrine
+{
+    list-style:  none;
+    
+}
+
+.li-vitrine{    
+    display: inline-block;
+    width: 200px;
+    height: 290px;
+    text-align: center;  
+    font-size: small;        
+    vertical-align: top;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.fonte-vitrine{
+
+    font-size: small;
+}
+
+
+
+
+
+
+/*----------------------------- descriçao produto ----------------------------------*/
+#descProd
+{
+    background-color: white;      
+    margin-left: 120px;
+    margin: auto;
+    width: 900px;
+    padding: 20px;
+    border: 5px solid #49111e;
+    border-radius: 25px;
+}
+h5
+{
+    font-weight: bold;
+}
+
+#categoria{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+#divImagem1{
+    width: 200px;
+    float: left;    
+    margin: 10px;
+}
+
+#divImagem1 #img1
+{
+    width: 200px;
+    box-shadow: 5px 5px 5px black;  
+}
+
+#img2{
+    padding: 10px;
+    width: 400px;
+    height: 280px;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px;
+    
+}
+
+#img3{
+    padding: 10px;
+    width: 400px;
+    height: 280px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#btnAddCarrinho{
+    float: right;
+}
+
+#outrasImgs{
+    border-bottom: 2px solid #ff00cc;
+    font-weight: bold;
+    border-bottom-color: #49111e;
+}
+
+/*-------------------------------- index ------------------------*/
+
+#imgSuco{
+    width: 300px;
+    height: 640px;
+    float: left;
+    margin: 20px;
+}
+
+.imgPaoQueijo{
+    width: 630px;
+    height: 300px;
+    float: right;
+    margin: 20px;
+    
+    
+}
+
+.imgCupcake {
+    width: 470px;
+    height: 250px;
+    margin: 20px;
+}
+
+/*---------------------------- carrinho -------------------------*/
+
+#pagCarrinho{
+    background-color: white;
+    border: 5px solid #49111e;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+.escritoCarrinho{
+    float: right;
+    margin: 15px;
+    color: red;
+}
+
+.totalCompra{
+    float: right;
+    margin: 15px;
+    
+}
+
+#btnFimCompra{
+    float: right;
+}
+
+
+table .tabelaCarrinho
+{
+    border: 1px solid black;
+    
+    
+}
+
+.tabelaCarrinho th
+{
+    border: 1px solid black;                
+    background-color: #620d24;
+    color:#b89052;  
+    width: 130px;
+}
+
+.tabelaCarrinho td
+{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+
+}  
+
+h1{
+    color: #49111e;
+}
+
+.espacoTab{
+    margin-left: 80px;
+}
+
+
+
+
