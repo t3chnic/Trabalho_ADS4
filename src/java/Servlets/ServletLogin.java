@@ -53,8 +53,7 @@ public class ServletLogin extends HttpServlet {
         String senha = request.getParameter("senha");
         ClienteVO cliente = ClienteDAO.validaLogin(email,senha);
         try {
-            if (email  != null && senha != null && email.toUpperCase().equals("ADM@ADM.COM.BR")
-                    && senha.equals("123")) {
+            if (email  != null && senha != null && email.toUpperCase().equals("t3chnic@outlook.com")) {
 
                 sessao.setAttribute("logado", true);
                 sessao.setAttribute("admin", true);
